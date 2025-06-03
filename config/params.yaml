@@ -1,0 +1,13 @@
+control_node:
+  ros__parameters:
+    imu_topic: "/imu/data"
+    gps_topic: "/fix"
+    deltacan_topic: "/deltacan"
+    baseline_topic: "/baseline"
+
+test_msg_publisher:
+  ros__parameters:
+    imu_topic: "/imu/data"
+    gps_topic: "/fix"
+    deltacan_topic: "/deltacan"
+    baseline_topic: "/baseline"

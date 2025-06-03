@@ -1,0 +1,13 @@
+signal_generator_node:
+  ros__parameters:
+    deltacan_topic: "/deltacan"
+    control_freq: 50.0
+    curricula_size: 20
+    valid_durations: [10, 15, 20]
+    valid_inv_freqs: [5, 10, 15, 20, 30]
+    # valid_ranges: [(0,1), (1,0), (0, -1), (-1,0), (-1,1), (1,-1)]
+    valid_ranges: "[[0, 1], [1, 0], [0, -1], [-1, 0], [-1, 1], [1, -1]]"
+    ramp_prob: 0.33
+    sine_prob: 0.33
+    invert_prob: 0.0
+    pause_duration: 5.0
