@@ -1,0 +1,23 @@
+interactive_signal_generator_node:
+  ros__parameters:
+    control_freq: 50.0
+    deltacan_topic: "/twist_deltacan"  
+    safety_topic: "/kinematic_safety" 
+    noise: 0.0
+
+    signal_sets:
+      0: "0.0, 0.0, {time}, 0.0" #Zero signal
+      1: "0.0, 0.0, {time}, 0.4" #Constant signal
+      2: "0.0, 0.0, {time}, -0.4"
+      3: "0.0, 0.0, {time}, 0.6"
+      4: "0.0, 0.0, {time}, -0.6"
+      5: "0.0, 0.0, {time}, 0.8"
+      6: "0.0, 0.0, {time}, -0.8"
+      7: "1.0, 0.0, {time}, 0.0, 1.0" #Ramp signals
+      8: "1.0, 0.0, {time}, 1.0, 0.0"
+      9: "1.0, 0.0, {time}, 0.0, -1.0"
+      10: "1.0, 0.0, {time}, -1.0, 0.0"
+      11: "1.0, 0.0, {time}, 1.0, -1.0"
+      12: "1.0, 0.0, {time}, -1.0, 1.0"
+      13: "2.0, 0.0, {time}, -1.0, 1.0" #Sine signals
+      14: "2.0, 0.0, {time}, 1.0, -1.0"

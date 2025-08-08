@@ -23,10 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'run_syncer = varying_controller.sync:main',
-            'run_test_signals = varying_controller.test_signals:main',
-            'run_rand_generator = varying_controller.generate_rand_signal:main',
-            'run_seq_generator = varying_controller.generate_seq_signal:main',
+            'run_full_excavator_test = varying_controller.joint_signal_controller_node:main',
         ],
     },
 )
